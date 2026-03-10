@@ -1,118 +1,133 @@
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
 }
-body{
-  color: #080808;
-  font-family:'Times New Roman', Times, serif;
-  width: 100%;
-  height : 100vh;
-  background-image: url("images/admin.jpg");
-  background-size: cover;
-  background-position: center;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+
+background-image:url("images/Aura-gym-outside.jpg");
+background-size:cover;
+background-position:center;
 }
+
+
+.container{
+display:flex;
+justify-content:center;
+align-items:center;
+width:100%;
+height:100%;
+}
+
 
 form{
-  width: 400px;
-  height: 450px;
-  background: linear-gradient(#ffffff34,#ffffff27);
-  backdrop-filter: blur(7px);
-  border: 1px solid #ffffff83;
-  box-shadow: 0 8px 32px #0000008a;
+width:380px;
+padding:40px;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+background: rgba(255,255,255,0.08);
+border-radius:20px;
+border:1px solid rgba(255,255,255,0.2);
+
+backdrop-filter:blur(15px);
+-webkit-backdrop-filter:blur(15px);
+
+box-shadow:0 20px 40px rgba(0,0,0,0.4);
+
+display:flex;
+flex-direction:column;
+align-items:center;
 }
+
+
 
 form h1{
-  margin-bottom: 5px;
-  margin-top: -40px;
+color:white;
+margin-bottom:5px;
 }
 
-.user{
-  position: relative;
+form h4{
+color:#ddd;
+font-size:14px;
+margin-bottom:25px;
 }
 
-.user2{
-  position: relative;
-  margin-bottom: 12px;
+
+
+.input-box{
+width:100%;
+position:relative;
+margin-bottom:20px;
 }
 
-form .txt{
-  width: 300px;
-  height: 45px;
-  outline: none;
-  background-color: transparent;
-  border: 1px solid #ffffffac;
-  border-radius: 30px;
-  margin-top: 20px;
-  padding: 10px;
+
+
+.input-box i{
+position:absolute;
+left:15px;
+top:50%;
+transform:translateY(-50%);
+color:white;
+font-size:14px;
 }
 
-form p{
-  margin-bottom: 15px;
-  font-size: 0.9rem;
+
+
+.input-box input{
+width:100%;
+padding:12px 15px 12px 40px;
+
+border-radius:30px;
+border:1px solid rgba(255,255,255,0.3);
+
+background:rgba(255,255,255,0.1);
+color:white;
+outline:none;
+font-size:14px;
 }
 
-input::placeholder{
-  color: #ffffffb9;
-  font-size: 0.8rem;
-  letter-spacing: 0.3px;
+
+
+.input-box input::placeholder{
+color:#ddd;
 }
 
-.fa-user{
-  position: absolute;
-  top: 52%;
-  right: 7%;
-}
 
-.fa-lock{
-  position: absolute;
-  top: 52%;
-  right: 7%;
-}
-
-a{
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-}
-
-form a{
-  margin-top: 10px;
-  font-size: 0.8rem;
-}
-
-.mypw{
-  width: 250px;
-  font-size: 0.8rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.mypw input{
-  width: 10px;
-  outline: none;
-  border: none;
-}
 
 button{
-  outline: none;
-  border: none;
-  font-size: 0.9rem;
-  padding: 12px 130px;
-  border-radius: 30px;
-  margin: 15px 0px;
-  cursor: pointer;
+width:100%;
+padding:12px;
+border-radius:30px;
+
+border:none;
+background:white;
+color:black;
+
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+margin-top:10px;
 }
-p{
-  font-size: 0.8rem;
+
+button:hover{
+background:#f1f1f1;
+transform:scale(1.03);
+}
+
+
+
+a{
+margin-top:15px;
+font-size:13px;
+color:white;
+text-decoration:none;
+}
+
+a:hover{
+text-decoration:underline;
 }
