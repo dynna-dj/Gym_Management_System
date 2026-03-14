@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gym Admin Dashboard</title>
+
+<style>
+/* ===== Body ===== */
+body{
+  font-family:" Times New Roman";
+  background:#0f0f0f;
+  color:white;
+  margin:0;
+  padding:20px;
+}
+
+/* ===== Header ===== */
+.title{
+  text-align:center;
+  color:#c8a96a;
+  margin-bottom:30px;
+  font-family: 'Open Sans', 'Roboto', 'Lato', 'Times New Roman', serif;
+}
+
+/* ===== Dashboard Layout ===== */
+.dashboard{
+  display:flex;
+  gap:40px;
+  max-width:1100px;
+  margin:auto;
+}
+
+/* ===== Sidebar ===== */
+.sidebar{
+  flex:1;
+  background:#1a1a1a;
+  padding:30px;
+  border-radius:10px;
+  border:1px solid #c8a96a;
+  font-family: 'Lato', 'Roboto', 'Open Sans', 'Times New Roman', serif;
+}
+
+.sidebar h2{
+  color:#c8a96a;
+  margin-top:0;
+}
+
+.sidebar ul{
+  list-style:none;
+  padding:0;
+}
+
+.sidebar li{
+  margin:15px 0;
+}
+
+.sidebar a{
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.sidebar a:hover{
+  color:#c8a96a;
+}
+
+/* ===== Main Content ===== */
+.main{
+  flex:2;
+  font-family: 'Roboto', 'Open Sans', 'Lato', 'Times New Roman', serif;
+}
+
+.section{
+  background:#1a1a1a;
+  padding:30px;
+  border-radius:10px;
+  border:1px solid #c8a96a;
+  margin-bottom:30px;
+}
+
+.section h2{
+  color:#c8a96a;
+  margin-top:0;
+  font-family: 'Open Sans', 'Lato', 'Roboto', 'Times New Roman', serif;
+}
+
+/* ===== Tables ===== */
+table{
+  width:100%;
+  margin-top:20px;
+  border-collapse:collapse;
+  font-family: 'Lato', 'Roboto', 'Open Sans', 'Times New Roman', serif;
+}
+
+th, td{
+  padding:10px;
+  border:1px solid #444;
+  text-align:left;
+  color:white;
+}
+
+th{
+  color:#c8a96a;
+}
+
+tbody tr:nth-child(even){
+  background:#1a1a1a;
+}
+
+tbody tr:hover{
+  background:#2a2a2a;
+}
+
+/* ===== Responsive ===== */
+@media(max-width:768px){
+  .dashboard{
+    flex-direction:column;
+  }
+}
+</style>
+</head>
+<body>
+
+<h1 class="title">Gym Admin Dashboard</h1>
+
+<div class="dashboard">
+
+  <!-- Sidebar / Navigation -->
+  <div class="sidebar">
+    <h2>Navigation</h2>
+    <ul>
+      <li><a href="#">Members</a></li>
+      <li><a href="#">Classes</a></li>
+      <li><a href="#">Subscriptions</a></li>
+      <li><a href="#">Trainers</a></li>
+      <li><a href="#">Orders</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+
+    <!-- Stats Section -->
+    <div class="section">
+      <h2>Summary</h2>
+      <p><strong>Total Members:</strong> 170</p>
+      <p><strong>Active Subscriptions:</strong> 90</p>
+      <p><strong>Classes Today:</strong> 10</p>
+      <p><strong>Revenue This Month:</strong> 100.000 DA</p>
+    </div>
+
+    <!-- Recent Registrations Table -->
+    <div class="section">
+      <h2>Recent Registrations</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Date</th>
+            <th>Plan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Lytissia</td>
+            <td>2026-03-01</td>
+            <td>Silver</td>
+          </tr>
+          <tr>
+            <td>Razanne Serine</td>
+            <td>2026-03-02</td>
+            <td>Gold</td>
+          </tr>
+          <tr>
+            <td>Ala Serine</td>
+            <td>2026-03-02</td>
+            <td>Silver</td>
+          </tr>
+          <tr>
+            <td>Dyna</td>
+            <td>2026-03-03</td>
+            <td>Gold</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
